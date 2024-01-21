@@ -1,8 +1,8 @@
 {
   "name": "jpeg-quality-estimator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JPEG File Quality Estimator",
-  "main": "dist/index.js",
+  "main": "dist/jpeg-quality-estimator.js",
   "repository": "https://github.com/outilslibre/js-jpeg-quality-estimator",
   "author": "ShareVB",
   "license": "MIT",
@@ -23,11 +23,17 @@
     "eslint-plugin-promise": "^6.0.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
-    "prettier": "^3.1.1"
+    "prettier": "^3.1.1",
+    "rollup": "4.x",
+    "rollup-plugin-uglify": "6.x",
+    "@rollup/plugin-babel": "6.x",
+    "@rollup/plugin-commonjs": "25.x",
+    "@rollup/plugin-node-resolve": "15.x",
+    "@rollup/plugin-replace": "5.x"
   },
   "scripts": {
     "test": "jest",
     "eslint": "eslint {src,__tests__}/**/*.js --format codeframe --fix",
-    "build": "babel src --out-dir dist"
+    "build": "rollup -c"
   }
 }
