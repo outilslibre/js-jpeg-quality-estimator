@@ -1,7 +1,7 @@
 # JPEG Quality Estimator
 
 ![npm](https://img.shields.io/npm/v/jpeg-quality-estimator)
-![GitHub](https://img.shields.io/github/license/outislibre/jpeg-quality-estimator)
+![GitHub](https://github.com/outilslibre/js-jpeg-quality-estimator)
 
 ## Overview
 
